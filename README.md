@@ -9,62 +9,46 @@
 
 ## Release
 
-### 1.0.3
-Build date: 2023-02-17 13:50
-Chrome version: M109
-
-### 1.0.3
-Build date: 2023-02-17 13:46
-Chrome version: M109
-
-### 1.0.3
-Build date: 2023-02-17 13:44
-Chrome version: M109
-
-### 1.0.3
-Build date: 2023-02-17 13:41
-Chrome version: M109
-
-### 1.0.3
-Build date: 2023-02-17 13:38
+### 1.0.3  
+Build date: 2023-02-17 14:20  
 Chrome version: M109
 
 ### 1.0.2
-Build date: 2022-11-09 17:13<br/>
+Build date: 2022-11-09 17:13  
 Chrome version: M103(Bitcode disabled)
 
 ### 1.0.1
-Build date: 2022-06-23 13:49<br/>
+Build date: 2022-06-23 13:49  
 Chrome version: M103
 
 ### 1.0.0
-Build date: 2020-12-07 18:54<br/>
+Build date: 2020-12-07 18:54  
 Commit: '0d863f72a8c747c1b41f2798e5201e1abcdaec2b'
 
 ## Installation
 ### Swift Package Manager
-In your Xcode project go to: File -> Swift Packages -> Add Package Dependency<br/>
+In your Xcode project go to: File -> Swift Packages -> Add Package Dependency  
 https://github.com/TechTeamer/ios-xc-webrtc.git
 
 
 ### Cocoapods
-Just copy into your podfile, looks like this.<br/>
+Just copy into your podfile, looks like this.  
 
-<br/>------------------------ Podfile ------------------------
+  ------------------------ Podfile ------------------------
 
-source 'https://github.com/CocoaPods/Specs.git'<br/>
+source 'https://github.com/CocoaPods/Specs.git'  
 source 'https://github.com/TechTeamer/ios-xc-webrtc.git'
 
-  use_frameworks!<br/>
-  target 'YourApp' do<br/>
-    pod 'XCWebRTC'<br/>
+  use_frameworks!  
+  target 'YourApp' do  
+    pod 'XCWebRTC'  
   end
   
-<br/>---------------------------------------------------------
+  ---------------------------------------------------------
 
-run:<br/>
-pod repo update<br/>
-pod install<br/>
+run:  
+pod repo update  
+pod install  
 
 ## Description
 This is a new generation xcframework is built for Apple machines including iOS/iPadOS/macOS & Silicon processors.

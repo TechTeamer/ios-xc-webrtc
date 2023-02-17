@@ -35,15 +35,15 @@ function copyFiles {
     
     releaseDate=$(date '+%Y-%m-%d %H:%M')
     #releaseDescription="### $version\nBuild date: $releaseDate"
-    releaseDescription="### $version\nBuild date: $releaseDate\nChrome version: M109"
-    sed -i "" "s/## Release/## Release\n\n$releaseDescription/" $rootPath/README.md
+    releaseDescription="### ${version}  \nBuild date: ${releaseDate}  \nChrome version: M109"
+    sed -i "" "s/## Release/## Release\n\n${releaseDescription}/" ${rootPath}/README.md
     
-    rm -rf $rootPath/XCWebRTC.podspec
+    rm -rf ${rootPath}/XCWebRTC.podspec
     
     sourceURL="https://github.com/TechTeamer/ios-xc-webrtc/raw/${version}/XCWebRTC/WebRTC.xcframework.zip"
     sourceChecksum=$(swift package compute-checksum "${binaryPath}/WebRTC.xcframework.zip")
-    sed "s|X.Y.Z|${version}|g; s|SOURCE_URL|${sourceURL}|g" <$scriptPath/templates/XCWebRTC.zip.podspec >$releasePath/XCWebRTC.podspec
-    sed "s|SOURCE_CHECKSUM|${sourceChecksum}|g; s|SOURCE_URL|${sourceURL}|g" <$scriptPath/templates/Package.zip.swift >$rootPath/Package.swift
+    sed "s|X.Y.Z|${version}|g; s|SOURCE_URL|${sourceURL}|g" <$scriptPath/templates/XCWebRTC.zip.podspec >${releasePath}/XCWebRTC.podspec
+    sed "s|SOURCE_CHECKSUM|${sourceChecksum}|g; s|SOURCE_URL|${sourceURL}|g" <${scriptPath}/templates/Package.zip.swift >${rootPath}/Package.swift
 }
 
 #---- Build -----
@@ -58,7 +58,7 @@ function clean {
 
 #---- Push the changes into the repository -----
 function push {
-    cd $rootPath
+    cd ${rootPath}
     #git lfs untrack "*.zip"
     #git lfs untrack "WebRTC.xcframework/ios-arm64/WebRTC.framework/WebRTC"
     #rm -rf .gitattributes
