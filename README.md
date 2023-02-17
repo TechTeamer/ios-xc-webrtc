@@ -9,6 +9,26 @@
 
 ## Release
 
+### 1.0.3
+Build date: 2023-02-17 13:50
+Chrome version: M109
+
+### 1.0.3
+Build date: 2023-02-17 13:46
+Chrome version: M109
+
+### 1.0.3
+Build date: 2023-02-17 13:44
+Chrome version: M109
+
+### 1.0.3
+Build date: 2023-02-17 13:41
+Chrome version: M109
+
+### 1.0.3
+Build date: 2023-02-17 13:38
+Chrome version: M109
+
 ### 1.0.2
 Build date: 2022-11-09 17:13<br/>
 Chrome version: M103(Bitcode disabled)
