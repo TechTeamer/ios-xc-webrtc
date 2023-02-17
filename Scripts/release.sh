@@ -78,19 +78,10 @@ function push {
     
     #commit & push
     commitMSG="New release: v.${version}"
-    commits="$(git reflog)"
-
-    if [[ $commits == *"${commitMSG}"* ]]; then
-        git tag ${version}
-        git push --force origin master
-    else
-        if [ -n "$(git status --porcelain)" ]; then
-            git commit -m "${commitMSG}"
-        fi
     
-        git tag ${version}
-        git push origin master
-    fi
+    git commit -m "${commitMSG}"
+    git tag ${version}
+    git push origin master
     
     #push tags
     git push --tags origin

@@ -10,7 +10,7 @@
 ## Release
 
 ### 1.0.3  
-Build date: 2023-02-17 14:20  
+Build date: 2023-02-17 14:39  
 Chrome version: M109
 
 ### 1.0.2
