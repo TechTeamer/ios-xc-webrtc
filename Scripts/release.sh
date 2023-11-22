@@ -18,10 +18,10 @@ function setup {
 }
 
 #---- Pull -----
-function pull {
-    cd $rootPath
-    git pull
-}
+#function pull {
+#    cd $rootPath
+#    git pull
+#}
 
 #---- Copy files -----
 function copyFiles {
@@ -35,7 +35,7 @@ function copyFiles {
     
     releaseDate=$(date '+%Y-%m-%d %H:%M')
     #releaseDescription="### $version\nBuild date: $releaseDate"
-    releaseDescription="### ${version}  \nBuild date: ${releaseDate}  \nChrome version: M109"
+    releaseDescription="### ${version}  \nBuild date: ${releaseDate}  \nChrome version: M119"
     sed -i "" "s/## Release/## Release\n\n${releaseDescription}/" ${rootPath}/README.md
     
     rm -rf ${rootPath}/XCWebRTC.podspec
@@ -47,9 +47,9 @@ function copyFiles {
 }
 
 #---- Build -----
-function build {
-    $scriptPath/build.sh $version
-}
+#function build {
+#    $scriptPath/build.sh $version
+#}
 
 #---- Clean -----
 function clean {

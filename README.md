@@ -9,6 +9,10 @@
 
 ## Release
 
+### 1.0.4  
+Build date: 2023-11-22 14:14  
+Chrome version: M119
+
 ### 1.0.3  
 Build date: 2023-02-17 14:39  
 Chrome version: M109
