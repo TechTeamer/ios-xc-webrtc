@@ -35,7 +35,7 @@ function copyFiles {
     
     releaseDate=$(date '+%Y-%m-%d %H:%M')
     #releaseDescription="### $version\nBuild date: $releaseDate"
-    releaseDescription="### ${version}  \nBuild date: ${releaseDate}  \nChrome version: M119"
+    releaseDescription="### ${version}  \nBuild date: ${releaseDate}  \nChrome version: M122"
     sed -i "" "s/## Release/## Release\n\n${releaseDescription}/" ${rootPath}/README.md
     
     rm -rf ${rootPath}/XCWebRTC.podspec
