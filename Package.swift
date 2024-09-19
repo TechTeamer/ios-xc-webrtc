@@ -1,4 +1,4 @@
-// swift-tools-version:5.5
+// swift-tools-version:5.10
 // The swift-tools-version declares the minimum version of Swift required to build this package.
 
 import PackageDescription
@@ -22,7 +22,7 @@ let package = Package(
         
         .binaryTarget(
             name: "WebRTC",
-            url: "https://github.com/TechTeamer/ios-xc-webrtc/raw/1.0.5/XCWebRTC/WebRTC.xcframework.zip",
-            checksum: "79c63e26621e239f9eebacbe6f21371d8a4a55471a648c093ea4e2c72a7e824b")
+            url: "https://github.com/TechTeamer/ios-xc-webrtc/raw/1.0.6/XCWebRTC/WebRTC.xcframework.zip",
+            checksum: "468cf792823b2d9e984bdab18311822cc42f34a905145f475ac6132b28061ff0")
     ]
 )
