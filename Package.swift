@@ -10,7 +10,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "XCWebRTC",
-            targets: ["WebRTC"]),
+            targets: ["WebRTC"]), //Deprecated target name. In the next version it will be renamed to XCWebRTC.
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -21,8 +21,8 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         
         .binaryTarget(
-            name: "WebRTC",
-            url: "https://github.com/TechTeamer/ios-xc-webrtc/raw/1.0.6/XCWebRTC/WebRTC.xcframework.zip",
+            name: "WebRTC", //Deprecated target name. In the next version it will be renamed to XCWebRTC.
+            url: "https://github.com/TechTeamer/ios-xc-webrtc/raw/1.0.7/XCWebRTC/WebRTC.xcframework.zip",
             checksum: "468cf792823b2d9e984bdab18311822cc42f34a905145f475ac6132b28061ff0")
     ]
 )

@@ -9,6 +9,11 @@
 
 ## Release
 
+### 1.0.7  
+Build date: 2024-11-08 12:21  
+Chrome version: M128 
+Deprecated WebRTC target name. In the next version it will be renamed to XCWebRTC.
+
 ### 1.0.6  
 Build date: 2024-09-19 23:05  
 Chrome version: M128
