@@ -14,4 +14,5 @@ s.platforms = { :ios => "15.0", :osx => "12.0" }
 s.pod_target_xcconfig = { "SWIFT_VERSION" => "5.10" }
 
 s.vendored_frameworks = 'WebRTC.xcframework'
+s.deprecated = true
 end  
